@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script> <!--Google map API-->
+	<script type="text/javascript" src="jscoord-1.1.1.js"></script> <!--Javascript library for co-ordinate conversion -->
+	<script type="text/javascript" src="blueplaques_data_processed.js"></script>  <!--JS containing all data-->
+	<script type="text/javascript" src="map_setup_plaques.js"></script> <!--JS created with different functions-->
+	<link rel="stylesheet" media="all" href="map_style.css" type="text/css"> <!--CSS created-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!--Bootstrap for responsibility-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" /> <!--font awesome link for icons-->
+	<title>Blue Plaques</title> <!--title of the page-->
+	<link rel="icon" href="google-maps.png" type="image/icon type"> <!--icon of the title-->
+</head>
+
+<body class="body" onload="initialize()"> <!--Function initialize() called from js when web page is loaded-->
+	<!--Heading part of the page where located page name and icon-->
+	<nav class="navbar navbar-expand-lg navbar-light py-4" id="navbar"> <!--All classes belong to bootstrap and used for responsivity-->
+		<div class="container-fluid">
+			<div class="navbar-brand mx-auto text-center" id="title">
+				<img src="pin.png" id="icon" alt="icon">
+				Blue Plaques Map
+			</div>
+		</div>
+	</nav>
+
+	<br>
+
+	<div class="container-fluid"> <!-- here in main part of the code I used row and column classes to divide page into two parts. On left side information about the Blue plaques
+	and map o the right side-->
+		<div class="row">
+			<div class="col-5">
+				<h1>What are the Blue Plaques?</h1>
+				<hr>
+				<div class="row"> <!--Also here inside the column I used row and col classes again to divide left info side again to to part in order to put image and info about the image-->
+					<div class="col-12 col-md-6">
+						<img class="pic" src="Picture 1.jpg">
+					</div>
+					<div class="col-12 col-md-6">
+						<p class="card-text">Roger Daltrey and Pete Townsend unveil a Blue Plaque commemorating the
+							recording of 'The Who - Live At Leeds' at Leeds University Refectory. [Source: The BBC]</p>
+					</div>
+				</div>
+				<hr>
+				<p class="text">Blue Plaques are signs erected in public places, that commemorate historic events
+					associated with that location, and the lives of historic people who have had an association with the
+					location and typically they have lived in the building to which the plaque is attached. The earliest
+					and most widely established scheme is run in London and is now administered by English Heritage;
+					separately administered schemes are run in many other parts of the country. Like many cities, Leeds
+					has a Blue Plaque scheme, with over 100 plaques designated. The map is showing 107 Blue Plaque locations in Leeds.</p>
+			</div>
+			<div class="col-7">
+				<div class="gmap" id="map_canvas"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer part of the page and copyrights-->
+	<footer class="text-center">
+		<div class="text-center p-4" id="copyright">
+			© 2023 Copyright: Ms. Hagverdiyeva
+		</div>
+
+	</footer>
+
+
+
+
+
+</body>

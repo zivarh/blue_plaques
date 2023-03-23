@@ -1,0 +1,69 @@
+html { 
+	height: 100%;
+	width: 100%;
+}
+/* here i decided use background color instead of image */
+.body { 
+	height: 100%;
+	width: 100%;
+	background-color: rgba(104, 156, 180, 0.545);
+}
+
+.gmap {
+	margin: 5px;
+    border: thin solid black;
+	height: 500px;
+}
+/* icon size */
+#icon{
+    width: 80px;
+    height: 80px;
+}
+/* title size and color */
+#title{
+	font-size: 3rem;
+	font-weight: bold;
+	color: rgb(100, 162, 189);
+}
+
+/* heading part color */
+.navbar{
+	background-color: rgb(216, 233, 250);
+}
+.text{
+	text-align: justify;
+}
+.pic{
+    height: 200px;
+    width: 300px;
+}
+
+/* Picture information text */
+.card-text{
+	font-size:small;
+	
+}
+footer{
+    background-color: rgb(216, 233, 250);
+}
+#copyright{
+    background-color: rgb(216, 233, 250);
+	color: black;
+	
+}
+.infowindow{
+	width: 300px;
+}
+/* infowindow regular text size */
+.infowindow p{
+    display: flex;
+	text-align: justify;
+	align-content: center;
+  }
+h1,h3{ 
+    color: rgb(84, 92, 103);
+    text-align: center;
+}
+p{
+	color: rgb(84, 92, 103);
+}
